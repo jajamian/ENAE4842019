@@ -1,0 +1,223 @@
+Astrogator Log File; DriverMCS: Mission_Control_Sequence
+-------------------------------------------------------------
+
+
+----------------------------------------------
+Begin targeter profile Target_Sequence.Differential_Corrector
+
+Initial control parameters:
+
+Unscaled Controls:
+Name                                Current Value           Last Update        Total Correction
+LOI : ImpulsiveMnvr.Cartesian.X  100.000000000000 m/sec  0.000000000000 m/sec  100.000000000000 m/sec
+
+
+Homotopy step   1 of   1
+
+Intermediate Goals Desired:
+LOI : Eccentricity  0.000000000000
+
+
+
+---Running one step of the differential corrector...
+
+-------------------------------------------------------------
+Iteration =   1
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917002640667  0.000000000000  0.917002640667  0.100000000000
+
+
+
+Performing one Newton-Raphson Step...
+
+Perturbation evaluation +1
+Controls:
+Name                                        Value          Perturbation       Scaled Perturbation
+LOI : ImpulsiveMnvr.Cartesian.X  100.100000000000 m/sec  0.100000000000 m/sec      0.100000000000
+
+Constraints:
+Name                         Value          Change       Scaled Change
+LOI : Eccentricity  0.917050541516  0.000047900850    4.7900849508e-05
+
+
+Partial derivative matrix (scaled) :
+
+     0.00047900849508
+
+Newton Step Done...
+
+DC proposed step:
+Name                                        Scaled           Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X -1914.376571783814 -1914.376571783814 m/sec
+
+
+Step with Max Step limits applied:
+Name                                       Scaled          Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X -100.000000000000 -100.000000000000 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                              Current Value             Last Update       Total Correction
+LOI : ImpulsiveMnvr.Cartesian.X  0.000000000000 m/sec -100.000000000000 m/sec   0.000000000000 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917547445993  0.000000000000  0.917547445993  0.100000000000
+
+
+
+-------------------------------------------------------------
+Iteration =   2
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917547445993  0.000000000000  0.917547445993  0.100000000000
+
+
+
+Updating partials with Secant method...
+
+Partial derivative matrix (scaled) :
+
+   -5.44805326136e-06
+
+Secant Update Done...
+
+DC proposed step:
+Name                                          Scaled             Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X  168417.488224748231  168417.488224748231 m/sec
+
+
+Step with Max Step limits applied:
+Name                                       Scaled          Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X  100.000000000000  100.000000000000 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                Current Value             Last Update        Total Correction
+LOI : ImpulsiveMnvr.Cartesian.X  100.000000000000 m/sec  100.000000000000 m/sec  100.000000000000 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917002640667  0.000000000000  0.917002640667  0.100000000000
+
+
+
+-------------------------------------------------------------
+Iteration =   3
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917002640667  0.000000000000  0.917002640667  0.100000000000
+
+
+
+Updating partials with Secant method...
+
+Partial derivative matrix (scaled) :
+
+   -5.44805326136e-06
+
+Secant Update Done...
+
+DC proposed step:
+Name                                          Scaled             Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X  168317.488224749046  168317.488224749046 m/sec
+
+
+Step with Max Step limits applied:
+Name                                       Scaled          Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X  100.000000000000  100.000000000000 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                Current Value             Last Update        Total Correction
+LOI : ImpulsiveMnvr.Cartesian.X  200.000000000000 m/sec  100.000000000000 m/sec  200.000000000000 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  1.038007397364  0.000000000000  1.038007397364  0.100000000000
+
+
+
+-------------------------------------------------------------
+Iteration =   4
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  1.038007397364  0.000000000000  1.038007397364  0.100000000000
+
+
+
+Updating partials with Secant method...
+
+Partial derivative matrix (scaled) :
+
+     0.00121004756697
+
+Secant Update Done...
+
+DC proposed step:
+Name                                       Scaled          Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X -857.823630819438 -857.823630819438 m/sec
+
+
+Step with Max Step limits applied:
+Name                                       Scaled          Unscaled
+LOI : ImpulsiveMnvr.Cartesian.X -100.000000000000 -100.000000000000 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                Current Value             Last Update        Total Correction
+LOI : ImpulsiveMnvr.Cartesian.X  100.000000000000 m/sec -100.000000000000 m/sec  100.000000000000 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917002640667  0.000000000000  0.917002640667  0.100000000000
+
+
+
+--------------------------------------------------------
+
+***Targeting aborted***
+
+   [Limit Cycle detected]
+
+
+***Targeting aborted***
+
+
+--------------------------------------------------------
+
+***Error running sequence or in evaluating results.
+
+
+----------------------------------------------
+Final Params from Homotopy Diff Corr
+
+Unscaled Controls:
+Name                                Current Value             Last Update        Total Correction
+LOI : ImpulsiveMnvr.Cartesian.X  100.000000000000 m/sec -100.000000000000 m/sec  100.000000000000 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                 Current Value         Desired      Difference       Tolerance
+LOI : Eccentricity  0.917002640667  0.000000000000  0.917002640667  0.100000000000
+
+
+
+----------------------------------------------
+
+*********** Done Targeting************************
+
+End targeter profile Target_Sequence.Differential_Corrector
