@@ -1,0 +1,129 @@
+
+BEGIN CentralBody
+
+    Name            Hyperion
+
+    Prefix          Moon
+
+    ShortDescription            Moon of Saturn
+
+    Description         Moon of Saturn (VII)
+
+    Type            Moon
+
+      FuncCbInit      AsterInit
+      FuncCbFree      PlanetFree
+      FuncCbLoad      PlanetLoad
+      FuncCbSave      PlanetSave
+
+BEGIN          AstroDefinition
+
+      Gm                  3.72368036357614e+008
+      RefDistance         1.80100000000000e+005
+      MinRadius           1.02700000000000e+005
+      MaxAltitude         0.00000000000000e+000
+      MinAltitude         -2.33000000000000e+004
+      AtmosphereAltitude  0.00000000000000e+000
+      DtedSearchScale     0.500
+
+        AttitudeName    IAU_1994
+
+        OrbitName   JPL_SPICE
+
+        ShapeName   Triaxial_Ellipsoid
+        Shape      TriAxialEllipsoid
+      MajorAxis      1.80100000000000e+005
+      MinorAxis      1.02700000000000e+005
+      MiddleAxis      1.33000000000000e+005
+
+      GravityModel        ZonalsToJ4
+
+      ParentName          Saturn
+
+
+        PathGenerator       Astrogator
+        PathGenerator       GreatArc
+        PathGenerator       HoldCBFPosition
+        PathGenerator       HoldCBIPosition
+        PathGenerator       J2Perturbation
+        PathGenerator       J4Perturbation
+        PathGenerator       Rocket
+        PathGenerator       SimpleAscent
+        PathGenerator       SPICE
+        PathGenerator       StkExternal
+        PathGenerator       TwoBody
+
+        CoordSystem Description MeanOfDate Mean of Date
+
+        CoordSystem Description TrueOfDate True of Date
+
+        CoordSystem Description TrueOfEpoch Moon True of Epoch
+
+        CoordSystem Description J2000 Earth Mean Equator and Equinox at epoch J2000
+
+        CoordSystem Description ICRF International Celestial Reference Frame
+
+
+END          AstroDefinition
+
+BEGIN               EphemerisData
+
+	EphemerisSource             JplSpice
+
+	JplIndex                    -1
+
+	JplSpiceId                  607
+
+	ApplyTDTtoTDBCorrectionForDE     Yes
+
+END     EphemerisData
+
+BEGIN               SpinData
+
+    RotationEpoch               2451545.0000000
+
+BEGIN RotationalElement
+      Type           SpinAxisRightAscension
+      Constant           0.00000000000000
+      Rate               0.00000000000000
+      RateDot            0.00000000000000
+      SineOrCosine       Sin
+      NumberOfTerms      0
+
+Coefficients
+
+END RotationalElement
+
+BEGIN RotationalElement
+      Type           SpinAxisDeclination
+      Constant           90.000000000000
+      Rate               0.00000000000000
+      RateDot            0.00000000000000
+      SineOrCosine       Sin
+      NumberOfTerms      0
+
+Coefficients
+
+END RotationalElement
+
+BEGIN RotationalElement
+      Type           Rotation
+      Constant           0.00000000000000
+      Rate               951.75148703040
+      RateDot            0.00000000000000
+      SineOrCosine       Sin
+      NumberOfTerms      0
+
+Coefficients
+
+END RotationalElement
+
+END               SpinData
+
+BEGIN               Hyperion
+
+END                 Hyperion
+
+    ReadOnly            No
+
+END CentralBody

@@ -1,0 +1,93 @@
+
+BEGIN CentralBody
+
+    Name            Rhea
+
+    Prefix          Moon
+
+    ShortDescription            Moon of Saturn
+
+    Description         Moon of Saturn (V)
+
+    Type            Moon
+
+      FuncCbInit      AsterInit
+      FuncCbFree      PlanetFree
+      FuncCbLoad      PlanetLoad
+      FuncCbSave      PlanetSave
+
+BEGIN          AstroDefinition
+
+      Gm                  1.53942776084350e+011
+      RefDistance         7.65000000000000e+005
+      MinRadius           7.62400000000000e+005
+      MaxAltitude         0.00000000000000e+000
+      MinAltitude         -2.33000000000000e+004
+      AtmosphereAltitude  0.00000000000000e+000
+      DtedSearchScale     0.500
+
+        AttitudeName    RotationCoefficientsFile
+
+        OrbitName   JPL_SPICE
+
+        ShapeName   Triaxial_Ellipsoid
+        Shape      TriAxialEllipsoid
+      MajorAxis      7.65000000000000e+005
+      MinorAxis      7.62400000000000e+005
+      MiddleAxis      7.63100000000000e+005
+
+      GravityModel        ZonalsToJ4
+
+      ParentName          Saturn
+
+
+        PathGenerator       Astrogator
+        PathGenerator       GreatArc
+        PathGenerator       HoldCBFPosition
+        PathGenerator       HoldCBIPosition
+        PathGenerator       J2Perturbation
+        PathGenerator       J4Perturbation
+        PathGenerator       Rocket
+        PathGenerator       SimpleAscent
+        PathGenerator       SPICE
+        PathGenerator       StkExternal
+        PathGenerator       TwoBody
+
+        CoordSystem Description MeanOfDate Mean of Date
+
+        CoordSystem Description TrueOfDate True of Date
+
+        CoordSystem Description TrueOfEpoch Moon True of Epoch
+
+        CoordSystem Description J2000 Earth Mean Equator and Equinox at epoch J2000
+
+        CoordSystem Description ICRF International Celestial Reference Frame
+
+
+END          AstroDefinition
+
+BEGIN               EphemerisData
+
+	EphemerisSource             JplSpice
+
+	JplIndex                    -1
+
+	JplSpiceId                  605
+
+	ApplyTDTtoTDBCorrectionForDE     Yes
+
+END     EphemerisData
+
+BEGIN               SpinData
+
+    RotationDefinitionFile 	 RheaAttitude2006.rot
+
+END               SpinData
+
+BEGIN               Rhea
+
+END                 Rhea
+
+    ReadOnly            No
+
+END CentralBody

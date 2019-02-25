@@ -1,0 +1,16 @@
+stk.v.6.0
+
+Model ZonalsToJ4
+CentralBody Mimas
+Degree 4
+Order 0
+GM 2.50323530261639e+009
+RefDistance 1.98200000000000e+005
+Normalized	No
+
+Begin Coefficients
+2 0 0.00000000000000  0.0
+3 0 0.00000000000000  0.0
+4 0 0.00000000000000  0.0
+
+End Coefficients

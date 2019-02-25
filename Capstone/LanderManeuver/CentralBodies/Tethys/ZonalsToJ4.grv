@@ -1,0 +1,16 @@
+stk.v.6.0
+
+Model ZonalsToJ4
+CentralBody Tethys
+Degree 4
+Order 0
+GM 4.12091689185133e+010
+RefDistance 5.31000000000000e+005
+Normalized	No
+
+Begin Coefficients
+2 0 0.00000000000000  0.0
+3 0 0.00000000000000  0.0
+4 0 0.00000000000000  0.0
+
+End Coefficients

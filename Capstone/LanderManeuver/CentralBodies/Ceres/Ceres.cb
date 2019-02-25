@@ -1,0 +1,108 @@
+
+BEGIN CentralBody
+
+    Name            Ceres
+
+    Prefix          Planeto
+
+    ShortDescription            Asteroid
+
+    Description         Asteroid
+
+    Type            Planet
+
+      FuncCbInit      AsterInit
+      FuncCbFree      PlanetFree
+      FuncCbLoad      PlanetLoad
+      FuncCbSave      PlanetSave
+      FuncCbCopy      PlanetCopy
+      FuncCbSet      EarthSet
+
+BEGIN          AstroDefinition
+
+      Gm                  7.00000000000000e+010
+      RefDistance         4.87300000000000e+005
+      MinRadius           4.54700000000000e+005
+      MaxAltitude         0.00000000000000e+000
+      MinAltitude         -2.33000000000000e+004
+      AtmosphereAltitude  0.00000000000000e+000
+      DtedSearchScale     0.500
+
+        AttitudeName    RotationCoefficientsFile
+
+        OrbitName   Analytic_Orbit
+
+        ShapeName   Oblate_Spheroid
+        Shape      OblateSpheroid
+      MajorAxis      4.87300000000000e+005
+      MinorAxis      4.54700000000000e+005
+
+      GravityModel        ZonalsToJ4
+
+      ParentName          Sun
+
+
+        PathGenerator       Astrogator
+        PathGenerator       GreatArc
+        PathGenerator       HoldCBFPosition
+        PathGenerator       HoldCBIPosition
+        PathGenerator       HPOP
+        PathGenerator       J2Perturbation
+        PathGenerator       J4Perturbation
+        PathGenerator       Rocket
+        PathGenerator       SPICE
+        PathGenerator       StkExternal
+        PathGenerator       TwoBody
+
+        CoordSystem Description MeanOfDate Mean of Date
+
+        CoordSystem Description TrueOfDate True of Date
+
+        CoordSystem Description TrueOfEpoch Moon True of Epoch
+
+        CoordSystem Description J2000 Earth Mean Equator and Equinox at epoch J2000
+
+        CoordSystem Description ICRF International Celestial Reference Frame
+
+
+END          AstroDefinition
+
+BEGIN               EphemerisData
+
+	EphemerisSource             Analytic
+
+	JplIndex                    -1
+
+	JplSpiceId                  2000001
+
+	ApplyTDTtoTDBCorrectionForDE     Yes
+
+      OrbitEpoch                  2451200.5000000
+      OrbitMeanDist               413738891942.26
+      OrbitEcc                    0.078054160000000
+      OrbitInc                    27.150359334000
+      OrbitRAAN                   23.389922000000
+      OrbitPerLong                156.61238860800
+      OrbitMeanLong               448.94863860800
+      OrbitMeanDistDot            0.00000000000000
+      OrbitEccDot                 0.00000000000000
+      OrbitIncDot                 0.00000000000000
+      OrbitRAANDot                0.00000000000000
+      OrbitPerLongDot             0.00000000000000
+      OrbitMeanLongDot            0.21429037440798
+
+END     EphemerisData
+
+BEGIN               SpinData
+
+    RotationDefinitionFile 	 CeresAttitude2009.rot
+
+END               SpinData
+
+BEGIN               Ceres
+
+END                 Ceres
+
+    ReadOnly            No
+
+END CentralBody

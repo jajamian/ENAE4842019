@@ -1,0 +1,16 @@
+stk.v.6.0
+
+Model ZonalsToJ4
+CentralBody Hyperion
+Degree 4
+Order 0
+GM 3.72368036357614e+008
+RefDistance 1.35000000000000e+005
+Normalized	No
+
+Begin Coefficients
+2 0 0.00000000000000  0.0
+3 0 0.00000000000000  0.0
+4 0 0.00000000000000  0.0
+
+End Coefficients
